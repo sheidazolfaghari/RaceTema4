@@ -156,11 +156,12 @@ cran$country
 ```
 5. Elige todas las variables entre `r_arch y country` 
 ```{r}
-cran$r_arch,cran$country
+select(cran,cran$r_arch,cran$country)
 
 ```
 5. Puedes usar el signo (-) para no coger una columna determinada. Selecciona todas las columnas menos las que están entre `date y size` 
 ```{r}
+select(cran,-c("date", "size"))
 
 
 
