@@ -172,6 +172,7 @@ select(cran,-c("date", "size"))
 cran%>% filter(package == "plotly", r_version == "3.5.1")
 
 
+
 ```
 6. Elige aquellas descargas realizadas desde España (ES), con versiones de R superiores a la 3.4.0
 ```{r}
@@ -182,6 +183,9 @@ cran%>% filter(country == "ES",r_version> "3.4.0" )
 
 7. Elige aquellas descargas realizadas desde España (ES), o Portugal (PT).
 ```{r}
+cran%>% filter(country == c("ES", "PT"))
+
+
 
 
 
