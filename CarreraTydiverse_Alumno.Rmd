@@ -257,10 +257,12 @@ cran3%>% mutate(size_gb = size_mb/2**10)
 cran3<- cran3%>% mutate(correct_size = size + 1000)
 
 
+
 ```
 18. Usa `summarise` para determinar el valor medio del tamaño de las descargas realizadas en `cran` y almacenálo en la variable `avg_bytes`
 ```{r}
 cran3<- cran%>% summarise(avg_bytes = mean(size))
+
 
 
 ```
