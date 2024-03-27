@@ -125,6 +125,22 @@ cran
 ```
 3. Una ventaja de trasformar en tibble es la visualización. Escribe directamente el nombre de la variable y observa la visualización. Posteriormente usa la función `glimpse` sobre `cran` y observa el resultado.
 ```{r}
+#podemos ver cada uno de variable 
+cran$date
+cran$time
+cran$size
+cran$r_version
+cran$r_arch
+cran$r_os
+cran$package
+cran$version
+cran$country
+cran$ip_id
+# o asi
+cran
+
+glimpse(cran)
+#it gives us a glimpse of all the rows and columns and each variable
 
 
 ```
@@ -133,10 +149,14 @@ cran
 
 4. Elige únicamente las variables `ip_id, package, country`
 ```{r}
+cran$ip_id
+cran$package
+cran$country
 
 ```
 5. Elige todas las variables entre `r_arch y country` 
 ```{r}
+cran$r_arch,cran$country
 
 ```
 5. Puedes usar el signo (-) para no coger una columna determinada. Selecciona todas las columnas menos las que están entre `date y size` 
