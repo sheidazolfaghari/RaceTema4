@@ -329,6 +329,14 @@ by_package%>% summarise(count = n(),
 ```{r}
 
 
+top_counts <- cran %>%
+  group_by(package) %>%
+  summarise(count = n()) %>%
+  mutate(threshold = quantile(count, probs = 0.99)) %>%
+  filter(count > threshold)
+
+
+
 
 
 
