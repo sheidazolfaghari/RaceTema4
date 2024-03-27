@@ -275,6 +275,7 @@ by_package
 
 
 
+
 ```
 
 20. Usa la función `summarise` sobre  el elemento agrupado y calcula  el valor medio de la variable `size`. Observa el efecto del agrupamiento en el resultado.
